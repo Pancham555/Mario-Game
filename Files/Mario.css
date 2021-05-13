@@ -1,0 +1,55 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    /* overflow: hidden; */
+    background: url(MarioBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-color: black;
+}
+
+#back {
+    /* border-bottom: 2px solid black; */
+    position: relative;
+    top: 0px;
+}
+
+#character {
+    /* background: url(https://i.imgur.com/QGo5isT.gif);  */
+    position: absolute;
+    top: 316px;
+    left: -220px;
+    width: 200px;
+    height: 200px;
+    /* margin: 2rem; */
+    transition: 3s;
+}
+
+#enemy {
+    position: absolute;
+    top: 316px;
+    left: 85vw;
+    width: 175px;
+    height: 200px;
+    animation-name: pipe;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    display: none;
+}
+
+@keyframes pipe {
+    0% {
+        left: 85vw;
+    }
+
+    100% {
+        left: -15vw;
+    }
+}
+
+#score {
+    float: right;
+    color: blanchedalmond;
+    margin: 2rem;
+    font-size: 2rem;
+}
