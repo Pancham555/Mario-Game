@@ -1,9 +1,11 @@
 let audio=new Audio("Cartoon-Jumpy-B-www.fesliyanstudios.com.mp3")
+let backAudio=new Audio("super-mario-bros-4293.mp3")
 
     window.addEventListener("load",function () {
         setTimeout(() => {
             document.querySelector("#character").style.left = "350px"
         }, 1800);
+        backAudio.play()
     })
     
     // document.querySelector("#enemy").style.display="none"
